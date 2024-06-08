@@ -1,0 +1,17 @@
+let a = [
+  "alice and bob love leetcode",
+  "i think so too",
+  "this is great thanks very much",
+];
+let b=[]
+// console.log(a[0].charAt(2))
+for (let i = 0; i < a.length; i++) {
+  let flag=1;
+  for (let j = 0; j < a[i].length; j++) {
+    if (a[i].charAt(j)==" ") {
+      flag++;
+    }
+  }
+  b.push(flag);
+}
+console.log(Math.max(...b))
